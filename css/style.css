@@ -6,7 +6,6 @@ body {
 
 /* ---- Header ---- */
 header {
-  min-height: 50px;
   background-color: #3cb4c4;
   display: grid;
   grid-template-columns: minmax(max-content, 1fr) 3fr minmax(max-content, 1fr);
@@ -23,7 +22,7 @@ header {
 
 #logo-header img {
   max-width: 200px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .menu {
@@ -66,17 +65,36 @@ header {
   list-style: symbols(cyclic "-");
 }
 
+.menu li:hover a {
+  color: #f8c100;
+}
+
+/* Precisei colocar isso por texto interno ficava amarelo*/
+
+.menu li:hover ul li a {
+  color: #111;
+}
+
+/* Precisei colocar isso por o - ficava pequeno*/
+
+.menu li:hover::marker {
+  font-size: 1.3em;
+}
+
 .menu li ul {
   position: absolute;
   top: 66px;
   left: 0;
-  display: none;
+  /* display: none; */
+
   background-color: #fff;
-  transition: 1s;
+  transition: 0.3s;
+  transform-origin: 0 0 0;
+  transform: scale(100%, 0%);
 }
 
 .menu li:hover ul {
-  display: block;
+  transform: scale(100%, 100%);
 }
 
 .menu li ul {
@@ -84,7 +102,7 @@ header {
 }
 .menu li ul li {
   display: block;
-  width: 250px;
+  width: 206px;
   padding: 0;
 }
 
@@ -110,14 +128,13 @@ header {
   background-color: #f8c100;
   text-decoration: none;
   color: #fff;
-  padding: 28% 15px;
+  padding: 20% 15px;
   transition: 0.4s;
 }
 
 #link-amarelo a:hover {
   display: block;
   background-color: #5c858d;
-  padding: 28% 15px;
 }
 
 /* ---- Main ---- */
