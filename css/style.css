@@ -28,9 +28,8 @@ header {
 
 .menu {
   margin: 0;
-  padding: 0;
+  padding: 0 30px 0 0;
   float: left;
-  background-color: #111;
 }
 
 .menu a {
@@ -41,17 +40,20 @@ header {
   position: relative;
   float: left;
   direction: rtl;
-  list-style-position: inside;
   margin-left: 30px;
   color: #fff;
   list-style: symbols(cyclic "+");
-  padding: 15px 0;
+  padding: 10px 0;
+}
+
+.menu li:nth-of-type(1) {
+  padding-left: 0;
 }
 
 .menu li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 20px 5px;
   display: block;
 }
 
@@ -66,7 +68,7 @@ header {
 
 .menu li ul {
   position: absolute;
-  top: 50px;
+  top: 66px;
   left: 0;
   display: none;
   background-color: #fff;
@@ -83,6 +85,7 @@ header {
 .menu li ul li {
   display: block;
   width: 250px;
+  padding: 0;
 }
 
 .menu li ul li a {
