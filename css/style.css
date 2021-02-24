@@ -369,6 +369,22 @@ main h3 {
   display: block;
 }
 
+#curso-fundo {
+}
+
+#curso-grid-container {
+  width: 100%;
+  max-width: var(--max-width-center);
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: -60px auto 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 60px auto auto auto auto;
+  gap: 12px 65px;
+  color: #505050;
+}
+
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 /* ---------- Footer ---------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
