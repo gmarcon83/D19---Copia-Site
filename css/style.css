@@ -38,6 +38,10 @@ h6::selection {
   background-color: #21a7d0;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 /* ---------- Header ---------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
@@ -267,11 +271,11 @@ main h3 {
   max-width: var(--max-width-center);
   box-sizing: border-box;
   padding: 0 15px;
-  margin: -60px auto 90px;
+  margin: -60px auto 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 60px auto auto auto auto;
-  gap: 12px 55px;
+  gap: 12px 65px;
   color: #505050;
 }
 
@@ -283,10 +287,14 @@ main h3 {
   border-radius: 8px;
 }
 
+#conheca h3 {
+  margin-top: 12px;
+}
+
 #conheca p {
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 170%;
   margin-bottom: 40px;
 }
 
@@ -318,11 +326,47 @@ main h3 {
   font-size: 1.35rem;
   font-family: "Nunito";
   font-weight: 600;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .card-sobre {
   background-color: #e7f4f6;
   border-radius: 4px;
+  box-sizing: border-box;
+  padding: 7px 10px 7px 10px;
+  display: grid;
+  grid-template-columns: 75px auto;
+  column-gap: 15px;
+  grid-column: 2;
+}
+
+.card-sobre i {
+  align-self: center;
+  text-align: center;
+  box-sizing: border-box;
+  color: #21a7d0;
+  border-right: 1px solid #21a7d0;
+}
+
+#s-card-1 {
+  grid-row: 2;
+}
+
+#s-card-2 {
+  grid-row: 3;
+}
+
+#s-card-3 {
+  grid-row: 4;
+}
+
+#s-card-4 {
+  grid-row: 5;
+}
+
+.card-sobre p {
+  display: block;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
