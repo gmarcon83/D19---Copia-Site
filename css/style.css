@@ -208,6 +208,23 @@ main {
   min-height: 1200px;
   color: #ebebeb;
 }
+main h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  color: #21a7d0;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  margin: 0;
+}
+
+main h3 {
+  font-family: "Nunito";
+  font-weight: 700;
+  color: #111;
+  font-size: 2.4rem;
+  line-height: 120%;
+  margin: 0;
+}
 
 /* ▲▼▲▼▲▼▲▼ - Banner - ▲▼▲▼▲▼▲▼ */
 
@@ -239,6 +256,55 @@ main {
   color: #505050;
   text-align: center;
   font-size: 1.35rem;
+}
+
+/* ▲▼▲▼▲▼▲▼ - Sobre - ▲▼▲▼▲▼▲▼ */
+
+#sobre-grid-container {
+  width: 100%;
+  max-width: var(--max-width-center);
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: -60px auto 90px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 60px auto auto auto auto;
+  gap: 12px 55px;
+  color: #505050;
+}
+
+#sobre-grid-container div {
+  background-color: #e7f4f6;
+  border-radius: 8px;
+}
+
+#conheca {
+  grid-row: 1 / 6;
+  margin-bottom: 30px;
+  padding: 60px;
+}
+
+#conheca p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 40px;
+}
+
+#botao-sobre {
+  background-color: #3cb4c4 !important;
+  display: inline;
+  padding: 18px 50px;
+  border-radius: 30px !important;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#botao-sobre:hover {
+  background-color: #5c858d !important;
+  cursor: pointer;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
