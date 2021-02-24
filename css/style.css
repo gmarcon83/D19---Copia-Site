@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900");
 
+:root {
+  --max-width-center: 1170px;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ----------- Geral ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 html,
 body {
   margin: 0;
@@ -9,7 +17,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
-  color: #5050;
+  color: #505050;
   font-family: Rubik, sans-serif;
 }
 
@@ -18,17 +26,38 @@ img {
   height: auto;
 }
 
-/* ---- Header ---- */
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  color: #fff;
+  background-color: #21a7d0;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Header ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 header {
   background-color: #3cb4c4;
-  display: grid;
-  grid-template-columns: minmax(max-content, 1fr) 3fr minmax(max-content, 1fr);
-  padding: 0 1vw;
+  width: 100%;
   position: sticky;
   top: 0;
 }
 
 .grid-container {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  max-width: var(--max-width-center);
+  grid-template-columns: minmax(max-content, 1fr) 3fr minmax(max-content, 1fr);
+}
+
+.grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +86,7 @@ header {
   margin-left: 30px;
   color: #fff;
   list-style: none;
-  padding: 10px 0;
+  padding: 10px 0 0 18px;
 }
 
 .menu li:nth-of-type(1) {
@@ -72,13 +101,13 @@ header {
   transition: 0.5s;
 }
 
-/* Adiciona o + depois dos iten do menu */
+/* Adiciona o + depois dos itens do menu */
 .menu li a::before {
   content: "+";
   position: absolute;
   left: auto;
   right: -10px;
-  top: 50%;
+  top: calc(50% + 0.25em);
   text-align: center;
   transform: translateY(-50%);
   transition: 0.5s;
@@ -149,7 +178,7 @@ header {
 
 #link-amarelo {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   display: block;
   align-self: stretch;
   display: flex;
@@ -171,13 +200,51 @@ header {
   background-color: #5c858d;
 }
 
-/* ---- Main ---- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ----------- Main ----------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 main {
   min-height: 1200px;
   color: #ebebeb;
 }
 
-/* ---- Footer ---- */
+/* ▲▼▲▼▲▼▲▼ - Banner - ▲▼▲▼▲▼▲▼ */
+
+#banner-background {
+  background-image: url(../img/home1.webp);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 430px;
+}
+
+#banner {
+  width: 100%;
+  max-width: var(--max-width-center);
+  margin: auto;
+}
+
+#banner h1 {
+  color: #111;
+  font-family: Nunito;
+  font-size: 3.7rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 70px;
+  margin-top: 0;
+}
+
+#banner p {
+  color: #505050;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Footer ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 footer {
   min-height: 100px;
   background-color: #3cb4c4;
