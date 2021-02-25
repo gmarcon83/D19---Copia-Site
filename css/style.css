@@ -508,6 +508,50 @@ main p {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inscricao i {
+  font-size: 3.5rem;
+  flex: 0 0 10%;
+}
+
+#inscricao p {
+  font-family: "Nunito";
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fdfdfd;
+  flex: 0 0 60%;
+}
+
+#inscricao-botao {
+  font-weight: 600;
+  width: 228px;
+  height: 48px;
+  display: block;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex: 0 0 20%;
+  border-radius: 4px;
+}
+
+#inscricao-botao a {
+  text-align: center;
+  display: block;
+  background-color: #f8c100;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 0;
+  flex: 0 0 100%;
+  transition: 0.4s ease;
+}
+
+#inscricao-botao a:hover {
+  background-color: #5c858d;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
