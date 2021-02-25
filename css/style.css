@@ -43,6 +43,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.botao {
+  text-transform: uppercase;
+}
+
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 /* ---------- Header ---------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
@@ -52,13 +56,14 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .grid-container {
   margin: auto;
-  width: calc(100% - 118px);
+  width: 100%;
   display: grid;
-  max-width: var(--max-width-center);
+  max-width: calc(var(--max-width-center) - 30px);
   grid-template-columns: max-content 1fr max-content;
 }
 
@@ -103,7 +108,7 @@ header {
   text-decoration: none;
   padding: 20px 5px;
   display: block;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 /* Adiciona o + depois dos itens do menu */
@@ -115,7 +120,7 @@ header {
   top: calc(50% + 0.25em);
   text-align: center;
   transform: translateY(-50%);
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .menu li a:hover {
@@ -147,7 +152,7 @@ header {
   top: 66px;
   left: 0;
   background-color: #fff;
-  transition: 0.35s;
+  transition: 0.35s ease;
   transform-origin: 0 0 0;
   transform: scale(100%, 0%);
   opacity: 0%;
@@ -199,7 +204,7 @@ header {
   text-decoration: none;
   color: #fff;
   padding: 20% 15px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 #link-amarelo a:hover {
@@ -272,9 +277,9 @@ main p {
 
 #sobre-grid-container {
   width: 100%;
-  max-width: var(--max-width-center);
+  max-width: calc(var(--max-width-center) - 30px);
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 0;
   margin: -60px auto 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -310,7 +315,7 @@ main p {
   color: #fff;
   font-size: 1.05rem;
   font-weight: 500;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 #botao-sobre:hover {
@@ -329,6 +334,7 @@ main p {
   color: #fff;
   font-size: 1.35rem;
   font-family: "Nunito";
+  text-transform: uppercase;
   font-weight: 600;
   grid-column: 2;
   grid-row: 1;
@@ -383,7 +389,7 @@ main p {
 
 #curso-conteudo {
   width: 100%;
-  max-width: var(--max-width-center);
+  max-width: calc(var(--max-width-center) - 30px);
   margin: 0 auto;
 }
 
@@ -411,7 +417,7 @@ main p {
   font-weight: 500;
   padding: 12px 30px;
   color: #505050;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 #mais-informacoes-btn a:hover {
@@ -425,7 +431,7 @@ main p {
 
 #formacao {
   width: 100%;
-  max-width: var(--max-width-center);
+  max-width: calc(var(--max-width-center) - 30px);
 }
 
 #curso-grid-container {
@@ -433,8 +439,8 @@ main p {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 390px 1fr;
-  background-color: #f9f8f8;
-  background-color: red;
+  grid-template-rows: 1fr 90px;
+  background-color: #f3f8f9;
   margin-top: 60px;
 }
 
@@ -483,6 +489,25 @@ main p {
 .topo-card-curso p {
   font-size: 1.1rem !important;
   margin: 3px 0 3px -20px;
+}
+
+/* ▲▼▲▼▲▼▲▼ - Inscrição - ▲▼▲▼▲▼▲▼ */
+
+#inscricao-container {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 55px 0;
+}
+
+#inscricao {
+  width: 100%;
+  height: 205px;
+  max-width: calc(var(--max-width-center) - 30px);
+  margin: 0 auto;
+  background-image: url(../img/news-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
