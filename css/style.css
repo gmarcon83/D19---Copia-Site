@@ -649,11 +649,82 @@ main p {
   grid-column: 1 / 4;
 }
 
+/* ▲▼▲▼▲▼▲▼ - Link Whats - ▲▼▲▼▲▼▲▼ */
+
+#link-whats-fixo {
+  position: fixed;
+  right: 44px;
+  bottom: 38px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#link-whats-fixo a {
+  padding-top: 3px;
+  font-size: 18px;
+  color: #fdfdfd;
+}
+
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 /* ---------- Footer ---------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 footer {
-  min-height: 100px;
+  height: 160px;
   background-color: #3cb4c4;
+}
+
+#footer-container {
+  width: 100%;
+  margin: auto;
+  max-width: calc(var(--max-width-center) - 30px);
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 160px;
+}
+
+#footer-image img {
+  width: 180px;
+}
+
+#footer-escrita {
+  text-align: center;
+  color: #fdfdfd;
+  font-size: 1rem;
+}
+
+#footer-image,
+#footer-escrita,
+#footer-links {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#footer-links {
+  justify-content: flex-end;
+}
+
+#footer-links i {
+  padding: 10px;
+  margin: 0 5px;
+  color: white;
+  background-color: #f8c100;
+  min-width: 2ch;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.85em;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+#footer-links i:hover {
+  background-color: #273c66;
 }
