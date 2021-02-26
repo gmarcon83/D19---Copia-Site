@@ -74,8 +74,8 @@ header {
 }
 
 #logo-header img {
-  max-width: 170px;
-  padding: 5px 0;
+  max-width: 140px;
+  padding: 13px 0 0;
 }
 
 /* --- Nav Menu--- */
@@ -203,7 +203,7 @@ header {
   background-color: #f8c100;
   text-decoration: none;
   color: #fff;
-  padding: 20% 15px;
+  padding: 17% 15px;
   transition: 0.4s ease;
 }
 
@@ -269,6 +269,7 @@ main p {
 }
 
 #banner p {
+  margin-top: -15px;
   text-align: center;
   font-size: 1.35rem;
 }
@@ -715,13 +716,13 @@ footer {
   margin: 0 5px;
   color: white;
   background-color: #f8c100;
-  min-width: 2ch;
+  min-width: 1em;
+  min-height: 1em;
   text-align: center;
   border-radius: 50%;
   font-size: 0.85em;
   overflow: hidden;
   cursor: pointer;
-
   transition: 0.4s;
 }
 
